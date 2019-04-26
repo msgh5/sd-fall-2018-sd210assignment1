@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SD210Assignment1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,13 @@ namespace SD210Assignment1.Controllers
     {
         public ActionResult Index()
         {
+            var myBool = true;
+
+            myBool.ToYesOrNo();
+
+
+           
+
             return View();
         }
 

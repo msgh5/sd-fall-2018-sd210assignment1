@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using SD210Assignment1.Models;
+using System.Web;
 using System.Web.Mvc;
 
 namespace SD210Assignment1
@@ -8,6 +9,7 @@ namespace SD210Assignment1
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new LogActionFilter());
         }
     }
 }
